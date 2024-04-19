@@ -29,7 +29,7 @@ header {
     nav {
         height: 30%;
         width: 100%;
-        background-color: aquamarine;
+        background-color: rgb(100, 228, 185);
     }
 }
 
@@ -61,10 +61,10 @@ header {
     box-shadow: 0 10px 20px -10px rgb(0, 0, 0, 0.418);
 
     .icono {
-        height: 100%;
+
         width: 40px;
-        background-color: rgb(22, 192, 192);
-        color: whitesmoke;
+        background-color: rgb(161, 123, 17);
+        color: rgb(65, 61, 61);
         display: grid;
         place-items: center;
     }
@@ -83,20 +83,20 @@ input[type="submit"]:focus {
     width: 40px;
     border: none;
     outline: none;
-    background-color: beige;
+    background-color: rgb(233, 233, 232);
     cursor: pointer;
 }
 
 input[type="submit"]:hover {
-    transition: 2s ease-in-out;
-    transform: rotate(720deg);
+    transition: 100s ease-in-out;
+    transform: rotate(17000deg);
 
 }
 
 nav.categorias {
     height: 30%;
     width: 100% auto;
-    background-color: rgb(136, 134, 134);
+    background-color: rgb(189, 157, 109);
     padding: 40px;
     overflow: hidden;
     display: flex;
@@ -104,21 +104,92 @@ nav.categorias {
     gap: 20px;
     overflow-x: scroll;
 
-    & a.btn-cat {
-        height: 70px;
-        width: 70px;
-        flex: 0 0 100px;
-        color: lightgray;
+    a.btn-cat {
+        height: 100px;
+        flex: 0 0 85px;
+        color: rgba(255, 0, 0, 0.637);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-size: 1.2em;
-        display: flex;
-
     }
 }
 
 .f30 {
     font-size: 30pt !important;
 }
+
+a {
+    color: rgb(46, 45, 45);
+}
+
+span {
+    color: rgb(255, 255, 247);
+}
+
+a:hover {
+    color: rgb(88, 85, 85);
+}
+
+a:active {
+    text-shadow: 0 0 10px white;
+}
+
+/*link=instancia inicial de un link
+active= cuando hago click
+visited enlace visto
+hover= cuando paso el mouse sobre el enlace o elemento */
+main {
+    background-color: rgb(228, 228, 57);
+    height: 100px auto;
+    width: 100%;
+    padding: 20px;
+
+    .restaurantes {
+        width: 100%;
+        height: 100px auto;
+        background-color: bisque;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+
+        .resto {
+
+            width: 100%;
+            background-color: chocolate;
+            flex: 0 0 160px;
+            align-content: center;
+            display: flex;
+position: relative;
+
+        }
+    }
+}
+
+.imagen_resto {
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    background-color: black;
+    float: left;
+    z-index: 0;
+    background-image:url(./img/restoranIgualinho.jpg);
+
+}
+
+.desc_resto {
+    position: absolute;
+    float: right;
+    right: 0;
+    
+    width: 60%;
+    height: 100%;
+    background-color: mediumspringgreen;
+    border-bottom-left-radius: 20px;
+
+}
+
+/*
+flex-grow= es la capacidad del elemento hijo de agrandarse si es necesario 
+flex-shrink= es la capacidad del elemento hijo de achicarse si es necesario
+flex-basis= establece un ancho minimo al elemento hijo*/
