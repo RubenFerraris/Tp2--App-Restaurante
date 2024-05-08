@@ -226,7 +226,9 @@ main {
         float: left;
         height: 100%;
         width: 45%;
-        background-color: rgb(115, 255, 0);
+        background-image: url(../img/restoranIgualinho.jpg);
+        background-position: center;
+        background-size: cover; 
       }
 
       .desc_resto {
