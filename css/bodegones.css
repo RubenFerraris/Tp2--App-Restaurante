@@ -228,7 +228,7 @@ main {
         width: 45%;
         background-image: url(../img/restoranIgualinho.jpg);
         background-position: center;
-        background-size: cover; 
+        background-size: cover;
       }
 
       .desc_resto {
@@ -473,12 +473,12 @@ h1::after {
 
 .agregarCarrito {
   background-color: var(--gris-bg);
-position: fixed;
-bottom: 0;
-width: 100%;
-padding: 20px;
-display: flex;
-gap: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  gap: 10px;
 
   .botonesCarrito {
     height: 40px;
@@ -502,15 +502,19 @@ gap: 10px;
     gap: 5px;
 
   }
- 
+
 }
 
-button:hover{
+button:hover {
   box-shadow: 0 2px 0 black;
   transition: 0.3s;
   cursor: pointer;
-    }
-.flex{display: flex;}
+}
+
+.flex {
+  display: flex;
+}
+
 @media screen and (orientation=landscape) {
   main {
     .restaurantes {
